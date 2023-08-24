@@ -1,3 +1,3 @@
-# adaptive-color-SL
+# Adaptive-color-SL
 
 The code and data are coming soon.
