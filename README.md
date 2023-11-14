@@ -2,7 +2,7 @@ Adaptive Color Structured Light for Calibration and Shape Reconstruction
 ===
 
 ## Introduction
-The adaptive color structured light can be used to achieve calibration and single-shot-per-pose reconstruction under different imaging settings and ambient light conditions. Based on the [single-shot-pro-cam-calib app][1], we add adaptive functions to it.
+We propose an approach that can efficiently adapt color SL to arbitrary ambient light and imaging devices’ color responses, without device response function calibration or geometric calibration. First, we design a novel algorithm to quickly find the most distinct colors that are easily separable under a new environment and device setup. Then, we design a maximum a posteriori (MAP)-based color detection algorithm that can utilize ambient light and device priors to robustly detect the SL colors.
 
 For more info please refer to our [paper][5] and [supplementary][6].
 
@@ -51,6 +51,10 @@ Please cite the paper in your publications if it helps your research:
         organization={IEEE}
     }
 
+## Acknowledgments 
+- This software and code borrows heavily from [single-shot-pro-cam-calib][1].
+- We express our gratitude to the anonymous reviewers for their valuable and insightful comments and suggestions, which have been truly inspiring.
+- Please don't hesitate to create an issue if you have any questions, suggestions, or concerns.
 
 ## License
 This software is freely available for non-profit non-commercial use, and may be redistributed under the conditions in [license](LICENSE).
