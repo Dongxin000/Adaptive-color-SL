@@ -136,13 +136,7 @@ if(verbose)
     sizeOfprjPts = size(prjPts,1);
     title(['Inlier matches of set ', string(imColorName(end-5:end-4)),num2str(sizeOfprjPts)]);
     drawnow
-    
-    %save
-    filepath=pwd; 
-    cd('D:\git\ARSL3.0\src\MATLAB\showcases');
-    saveas(gcf,strcat('imShowMatchedFeatures',string(imColorName(end-5:end-4)),'.png'));
-    cd(filepath)     
-    
+      
     % warp camera image and points to projector image space to see if
     % the grid and points overlap
     imColorGridPrj = cv.warpPerspective(imColorGrid, Hcp, 'DSize',[prjW,prjH]);

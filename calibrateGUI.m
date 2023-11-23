@@ -53,7 +53,7 @@ useParallel = app.calibOption.useParallel;
 useDistortion = app.calibOption.useDistortion;
 
 % adaptive option
-adaptiveOption = 0
+adaptiveOption = 1;
 
 hueLabel = load(fullfile(dataRoot, dataName, 'adap\hueLabel.mat'));
 hueLabel = hueLabel.hueLabel;

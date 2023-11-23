@@ -62,9 +62,13 @@ if(isa(calibInfo.numColor,'cell'))
 end
 
 % otsu param for otsu in ablation study
-if(isa(calibInfo.ablParam,'cell'))
-    calibInfo.ablParam = cell2mat(calibInfo.ablParam);
-    calibInfo.ablParam = reshape(calibInfo.ablParam, calibInfo.numColor(2)+1, 2)';
+try
+    if(isa(calibInfo.ablParam,'cell'))
+        calibInfo.ablParam = cell2mat(calibInfo.ablParam);
+        calibInfo.ablParam = reshape(calibInfo.ablParam, calibInfo.numColor(2)+1, 2)';
+    end
+catch
+    calibInfo.ablParam = [];
 end
 
 end

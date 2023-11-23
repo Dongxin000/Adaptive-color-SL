@@ -9,7 +9,7 @@ posteriori = zeros([numColor,256]);
 
 % iterate through each hue bin and confirm its label
 for i = 1:numColor
-    vecWeight = AdaptiveGenPattern.calVecWeight(optimalHueInfo(i).vecHue, unitizationOption);
+    vecWeight = AdaptiveGenPattern.calcHistHue(optimalHueInfo(i).vecHue, unitizationOption);
     sizeOfLabel = size(optimalHueInfo(i).vecHue,1);
     posteriori(i, :) =  vecWeight.*sizeOfLabel;
 end
@@ -20,4 +20,3 @@ end
 hueLabel = [optimalHueInfo(idxLabel).hue];
 hueLabel = [hueLabel; idxLabel];
 end
-
