@@ -32,6 +32,7 @@ The project folder is organized as follows:
     ├─+GUI                                          GUI package directory
     ├─+ImgProc                                      image processing package directory
     ├─+Reconstruct                                  3d reconstruction package directory
+    ├─+Utils                                        utilities package directory
     ├─data                                          directory for data
     │  ├─calibAndReconExp                           directory for experiments of calibration and reconstruction under different imaging settings and ambient conditions, which includes Setting1~Setting7, and Light1~Light6
     │  ├─ipadProRecon                               directory for point cloud reconstructed using ipad pro, which includes David, girl, box and fan.
