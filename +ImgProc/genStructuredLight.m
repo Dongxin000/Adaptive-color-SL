@@ -46,11 +46,11 @@ end
 
 if(adaptiveOption == 1)
    [horiList, vertList, horiPos, vertPos] = AdaptiveGenPattern.newCreateDeBruijnSeq(imgW, imgH, numHoriColor, numVertColor);
-   % currCompHsv =  load('D:\git\ARSL3.0\src\MATLAB\AdaptivePatternAndHueLabel\currCompHsv.mat');
-   % currCompHsv = currCompHsv.currCompHsv;
+   
    colorList = hsv2rgb(currCompHsv)*brightness;
 else
     [horiList, vertList, horiPos, vertPos] = ImgProc.createDeBruijnSeq(imgW, imgH);
+    
     r = [1, 0, 0];
     y = [1, 0.75, 0];
     l = [0.5, 1, 0];
@@ -59,6 +59,7 @@ else
     b = [0, 0.25, 1];
     p = [0.75, 0, 1];
     m = [1, 0, 0.75];
+    
     colorList = [r; y; l; g; c; b; p; m;] * brightness;
 end
     
