@@ -14,8 +14,8 @@ For more info please refer to our [paper][5] and [supplementary][6].
 
 #### Reproduce paper results
 1. Download dataset by [Google Drive][3] or [Baidu Netdisk][4] (code: ptdh), and extract to [`data/`](data).
-2. Set `dataName` in `compareCalibAndRecon.m` to `Setting1 ~ Setting7` and `Light1 ~ Light6`  and run `compareCalibAndRecon.m` in sequence to reproduce paper results. An example is shown below, we reproduce results in Setting1. `dataName = Setting1`
-3. Set `dataName` in `compareSingleShotRecon.m` to `singleShotRecon_settingA` and `singleShotRecon_settingB` and run `compareSingleShotRecon.m` in sequence to reproduce paper results. An example is shown below, we reproduce results in SettingA. `dataName = singleShotRecon_settingA`
+2. Set `dataName` in `compareCalibAndRecon.m` to `Setting1 ~ Setting7` and `Light1 ~ Light6`  and run `compareCalibAndRecon.m` in sequence to reproduce paper results. An example is shown below, we reproduce results in Setting1. `dataName = 'Setting1'`
+3. Set `dataName` in `compareSingleShotRecon.m` to `singleShotRecon_settingA` and `singleShotRecon_settingB` and run `compareSingleShotRecon.m` for different objects (set `reconName` to `David`, `Fan` and `Box`) in sequence to reproduce paper results. An example is shown below, we reproduce results in SettingA. `dataName = 'singleShotRecon_settingA'` and `reconName = 'David'`
 
 #### App tutorial
 1. Run `calibApp.mlapp` to start the App.
