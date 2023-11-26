@@ -27,7 +27,7 @@ For more info please refer to our [paper][5] and [supplementary][6].
 ## Folder Structure
 The project folder is organized as follows:
 
-    ├─+AdaptiveGenPattern                           adaptive generate color pattern package directory
+    ├─+AdaptiveGenPattern                           generate adaptive color pattern package directory
     ├─+Calibration                                  calibration package directory
     ├─+GUI                                          GUI package directory
     ├─+ImgProc                                      image processing package directory
