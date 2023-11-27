@@ -41,9 +41,8 @@ verbose = app.reconOption.verbose;
 % close previous waitbar
 delete(findall(0,'type','figure','tag','TMWWaitbar'));
 
-% %deep learning model option
-%useDeepLearningModelForReconstruct = 0
-adaptiveOption = 0;
+% adaptive option
+adaptiveOption = 1;
 
 % currNumColor = cell2mat(calibInfo.numColor);
 % numHoriColor = currNumColor(1);
@@ -105,12 +104,7 @@ msg = 'Matching structured light pattern...';
 waitbar(0.45, waitBarHandle, msg);
 disp(msg);
 
-%if(useDeepLearningModelForReconstruct ~=1)
-    [camNodes, prjNodes, Nodes, Edges] = ImgProc.getMatchedNodes(imSceneName, imColorName, [], prjW, prjH, calibInfo.numColor, adaptiveOption, hueLabel, verbose);
-%else
-%    disp(['Using deep learning model to reconstruct...']);
-%    [camNodes, prjNodes, Nodes, Edges] = ImgProc.getMatchedNodesUsingDeepLearningModel(imSceneName, imColorName, [], prjW, prjH, verbose);
-%end
+[camNodes, prjNodes, Nodes, Edges] = ImgProc.getMatchedNodes(imSceneName, imColorName, [], prjW, prjH, calibInfo.numColor, adaptiveOption, hueLabel, verbose);
 
 %% triangulate nodes
 msg = 'Triangulating node coordinates...';
