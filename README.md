@@ -2,7 +2,7 @@ Adaptive Color Structured Light for Calibration and Shape Reconstruction
 ===
 
 ## Introduction
-![teaser](doc/teaser.png.png)
+![teaser](doc/teaser.png)
 We propose an approach that can efficiently adapt color SL to arbitrary ambient light and imaging devices’ color responses, without device response function calibration or geometric calibration. First, we design a novel algorithm to quickly find the most distinct colors that are easily separable under a new environment and device setup. Then, we design a maximum a posteriori (MAP)-based color detection algorithm that can utilize ambient light and device priors to robustly detect the SL colors.
 
 For more info please refer to our [paper][5] and [supplementary][6].
